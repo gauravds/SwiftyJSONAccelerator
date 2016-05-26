@@ -379,6 +379,9 @@ public class ModelGenerator {
         if type == VariableType.kBoolType {
             return "\tpublic var \(variableName): \(type) = false\n"
         }
+        if variableName == "facebookSignupIncentiveText" {
+            print(type)
+        }
         return "\tpublic var \(variableName): \(type)?\n"
     }
 
@@ -541,7 +544,7 @@ public class ModelGenerator {
     internal func checkType(value: JSON) -> String {
 
         var js : JSON = value as JSON
-        var type: String = VariableType.kAnyObjectType
+        var type: String = VariableType.kObjectType
 
         if let _ = js.string {
             type = VariableType.kStringType
@@ -592,6 +595,8 @@ public class ModelGenerator {
 
         } else if let _ = js.array {
             type = VariableType.kArrayType
+        } else if let _ = js.null {
+            type = VariableType.kAnyObjectType
         }
 
         return type
