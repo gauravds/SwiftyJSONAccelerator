@@ -1,5 +1,4 @@
     required public init?(_ map: Map) {}
 
     public func mapping(map: Map) {
-{OBJECT_MAPPER_INITIALIZER}
-    }
+{OBJECT_MAPPER_INITIALIZER}}

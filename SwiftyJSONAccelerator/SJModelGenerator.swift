@@ -129,7 +129,7 @@ public class ModelGenerator {
             for (key, jsonValue) in object {
 
                 let variableName: String = variableNameBuilder(key)
-                let stringConstantName: String = variableNameKeyBuilder(className, variableName: variableName)
+                let stringConstantName: String = "\"\(key)\""//variableNameKeyBuilder(className, variableName: variableName)
                 let variableType: String = checkType(jsonValue)
 
                 // The key declaration and the encoder is same for all kinds of objects.
@@ -243,9 +243,9 @@ public class ModelGenerator {
                 if let objectMapperBase = try? String(contentsOfFile: NSBundle.mainBundle().pathForResource("ObjectMapperTemplate", ofType: "txt")!) {
                     content = content.stringByReplacingOccurrencesOfString("{OBJECT_MAPPER_SUPPORT}", withString: objectMapperBase)
 
-                    content = content.stringByReplacingOccurrencesOfString("{OBJECT_MAPPER_INITIALIZER}", withString: objectMapperMappings)
+                    content = content.stringByReplacingOccurrencesOfString("{OBJECT_MAPPER_INITIALIZER}", withString: objectMapperMappings + "\t")
 
-                    objectBaseClass = "Mappable"
+                    objectBaseClass = objectBaseClass + ", Mappable"
 
                     if includeObjectMapper! {
                         content = content.stringByReplacingOccurrencesOfString("{INCLUDE_OBJECT_MAPPER}", withString: "\nimport ObjectMapper")
