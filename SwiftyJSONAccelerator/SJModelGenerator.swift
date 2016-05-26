@@ -596,7 +596,7 @@ public class ModelGenerator {
         } else if let _ = js.array {
             type = VariableType.kArrayType
         } else if let _ = js.null {
-            type = VariableType.kAnyObjectType
+            type = VariableType.kStringType
         }
 
         return type
