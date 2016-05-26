@@ -27,6 +27,7 @@ struct VariableType {
     static let kBoolType = "Bool"
     static let kArrayType = "[]"
     static let kObjectType = "{OBJ}"
+    static let kAnyObjectType = "AnyObject"
 }
 
 /**
@@ -378,7 +379,6 @@ public class ModelGenerator {
         if type == VariableType.kBoolType {
             return "\tpublic var \(variableName): \(type) = false\n"
         }
-
         return "\tpublic var \(variableName): \(type)?\n"
     }
 
@@ -541,7 +541,7 @@ public class ModelGenerator {
     internal func checkType(value: JSON) -> String {
 
         var js : JSON = value as JSON
-        var type: String = VariableType.kObjectType
+        var type: String = VariableType.kAnyObjectType
 
         if let _ = js.string {
             type = VariableType.kStringType
