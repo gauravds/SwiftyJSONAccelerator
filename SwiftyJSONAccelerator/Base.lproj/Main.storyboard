@@ -698,19 +698,6 @@
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
                                             <size key="minSize" width="715" height="461"/>
                                             <size key="maxSize" width="717" height="10000000"/>
-                                            <attributedString key="textStorage">
-                                                <fragment>
-                                                    <string key="content">{
-  "note": "TEsting Version NOtes",
-  "force_upgrade": true,
-  "notification_style": "local_notification"
-}</string>
-                                                    <attributes>
-                                                        <font key="NSFont" metaFont="controlContent" size="11"/>
-                                                        <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
-                                                    </attributes>
-                                                </fragment>
-                                            </attributedString>
                                             <color key="insertionPointColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
                                             <size key="minSize" width="715" height="461"/>
                                             <size key="maxSize" width="717" height="10000000"/>
@@ -748,7 +735,7 @@
                             </textField>
                             <textField verticalHuggingPriority="750" translatesAutoresizingMaskIntoConstraints="NO" id="aJ1-yn-Pl7">
                                 <rect key="frame" x="13" y="184" width="692" height="22"/>
-                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" title="BaseClass" placeholderString="Base Class Name" bezelStyle="round" id="vuP-t4-ep6">
+                                <textFieldCell key="cell" scrollable="YES" lineBreakMode="clipping" selectable="YES" editable="YES" sendsActionOnEndEditing="YES" state="on" borderStyle="bezel" placeholderString="Base Class Name" bezelStyle="round" id="vuP-t4-ep6">
                                     <font key="font" metaFont="system"/>
                                     <color key="textColor" name="textColor" catalog="System" colorSpace="catalog"/>
                                     <color key="backgroundColor" name="textBackgroundColor" catalog="System" colorSpace="catalog"/>
