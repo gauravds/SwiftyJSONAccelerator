@@ -32,7 +32,7 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
         textView!.updateFormat()
         textView!.lnv_setUpLineNumberView()
         resetErrorImage()
-        authorNameTextField?.stringValue = NSFullUserName()
+//        authorNameTextField?.stringValue = NSFullUserName()
     }
 
     override var representedObject: AnyObject? {
@@ -125,6 +125,7 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
             generator.supportNSCoding = nscodingState
 
             generator.generate()
+            
         } else {
             let alert:NSAlert = NSAlert()
             alert.messageText = "Unable to save the file check the content."

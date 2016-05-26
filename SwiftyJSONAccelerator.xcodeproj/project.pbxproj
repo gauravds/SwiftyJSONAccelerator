@@ -390,7 +390,7 @@
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAccelerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punchh.PunchhModelAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 			};
 			name = Debug;
@@ -403,7 +403,7 @@
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
 				MACOSX_DEPLOYMENT_TARGET = 10.9;
-				PRODUCT_BUNDLE_IDENTIFIER = com.karthik.SwiftyJSONAccelerator;
+				PRODUCT_BUNDLE_IDENTIFIER = com.punchh.PunchhModelAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 			};
 			name = Release;

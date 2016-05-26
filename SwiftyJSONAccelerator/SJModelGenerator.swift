@@ -85,15 +85,19 @@ public class ModelGenerator {
 
         // Notify user that the files are generated!
         let notification: NSUserNotification = NSUserNotification()
-        notification.title = "SwiftyJSONAccelerator"
+        notification.title = "PunchhModelAccelerator"
         if name.characters.count > 0 {
             notification.subtitle = "Completed - \(name).swift"
         } else {
             notification.subtitle = "No files were generated, cannot model arrays inside arrays."
         }
         NSUserNotificationCenter.defaultUserNotificationCenter().deliverNotification(notification)
+        openSavedFileFolder()
     }
 
+    private func openSavedFileFolder() {
+        NSWorkspace.sharedWorkspace().selectFile(nil, inFileViewerRootedAtPath: self.filePath)
+    }
     //MARK: Internal methods
 
     /**
