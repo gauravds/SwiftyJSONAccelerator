@@ -379,9 +379,6 @@ public class ModelGenerator {
         if type == VariableType.kBoolType {
             return "\tpublic var \(variableName): \(type) = false\n"
         }
-        if variableName == "facebookSignupIncentiveText" {
-            print(type)
-        }
         return "\tpublic var \(variableName): \(type)?\n"
     }
 

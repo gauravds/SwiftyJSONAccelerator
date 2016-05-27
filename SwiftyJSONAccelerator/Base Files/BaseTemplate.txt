@@ -11,7 +11,7 @@ public {OBJECT_KIND} {OBJECT_NAME}: {OBJECT_BASE_CLASS}{NSCODING_PROTOCOL_SUPPOR
 {PROPERTIES}
 {OBJECT_MAPPER_SUPPORT}
     override public var description: String {
-        return self.toJSONString(true) ?? "<NO description available>"
+        return self.toJSONString(true) ?? "<NO description available of {OBJECT_NAME}>"
     }
 {NSCODING_SUPPORT}
 }
