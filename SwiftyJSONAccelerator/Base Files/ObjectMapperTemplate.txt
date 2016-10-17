@@ -1,4 +1,2 @@
-    required public init?(_ map: Map) {}
-
-    public func mapping(map: Map) {
+    override open func mapping(map: Map) {
 {OBJECT_MAPPER_INITIALIZER}}

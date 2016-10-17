@@ -6,12 +6,9 @@
 //
 {INCLUDE_SWIFTY}{INCLUDE_OBJECT_MAPPER}
 
-public {OBJECT_KIND} {OBJECT_NAME}: {OBJECT_BASE_CLASS}{NSCODING_PROTOCOL_SUPPORT} {
+open {OBJECT_KIND} {OBJECT_NAME}: PUBaseModel {
 
 {PROPERTIES}
 {OBJECT_MAPPER_SUPPORT}
-    override public var description: String {
-        return self.toJSONString(true) ?? "<NO description available of {OBJECT_NAME}>"
-    }
-{NSCODING_SUPPORT}
+
 }

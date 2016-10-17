@@ -205,7 +205,6 @@
 				TargetAttributes = {
 					93F1743E1BD0707D007E7DFC = {
 						CreatedOnToolsVersion = 7.0.1;
-						DevelopmentTeam = UYGU8PDBPS;
 					};
 					93F1744F1BD0707D007E7DFC = {
 						CreatedOnToolsVersion = 7.0.1;
@@ -389,7 +388,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchh.PunchhModelAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 			};
@@ -402,7 +401,7 @@
 				COMBINE_HIDPI_IMAGES = YES;
 				INFOPLIST_FILE = SwiftyJSONAccelerator/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/../Frameworks";
-				MACOSX_DEPLOYMENT_TARGET = 10.9;
+				MACOSX_DEPLOYMENT_TARGET = 10.10;
 				PRODUCT_BUNDLE_IDENTIFIER = com.punchh.PunchhModelAccelerator;
 				PRODUCT_NAME = SwiftyJSONAccelerator;
 			};
