@@ -4,7 +4,7 @@
 
 **(Beta v1.2(1))**
 
-[Download the .app (v1.2)](https://github.com/gauravds/SwiftyJSONAccelerator/releases/download/Punchh_1.2&#40;1&#41;_S3/Punchh.app.zip)
+[Download the .app (v1.2)](https://github.com/gauravds/SwiftyJSONAccelerator/releases/download/Punchh_1.2_S3/Punchh.app.zip)
 
 + Also supports markdown parser (JSON block) return from readme.io documentations.
 
