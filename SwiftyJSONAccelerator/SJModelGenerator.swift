@@ -386,9 +386,9 @@ public class ModelGenerator {
      */
     internal func variableDeclarationBuilder(variableName: String, type: String) -> String {
         if type == VariableType.kBoolType {
-            return "\tpublic var \(variableName): \(type) = false\n"
+            return "\topen var \(variableName): \(type) = false\n"
         }
-        return "\tpublic var \(variableName): \(type)?\n"
+        return "\topen var \(variableName): \(type)?\n"
     }
 
     //MARK: ObjectMapper Initalizer
