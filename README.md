@@ -1,10 +1,14 @@
-# SwiftyJSONAccelerator
-
-**(Alpha v0.0.5)**
-
-[Download the .app (v0.0.5)](https://github.com/insanoid/SwiftyJSONAccelerator/releases/download/v0.0.5/SwiftyJSONAccelerator.zip)
+# Punchh Version - SwiftyJSONAccelerator
 
 ![Logo](https://raw.githubusercontent.com/insanoid/SwiftyJSONAccelerator/master/SwiftyJSONAccelerator/Assets.xcassets/AppIcon.appiconset/Icon_32x32%402x.png)
+
+**(Beta v1.2(1))**
+
+[Download the .app (v1.2)](https://github.com/gauravds/SwiftyJSONAccelerator/releases/download/Punchh_1.2&#40;1&#41;_S3/Punchh.app.zip)
+
++ Also supports markdown parser (JSON block) return from readme.io documentations.
+
+
 
 A swift model generator like the Objective-C [JSONAccelerator](http://nerdery.com/json-accelerator). Formats and generates models for the given JSON and also breaks them into files making it easy to manage and share between several models.
 
@@ -19,7 +23,7 @@ Currently, the pattern is very similar to its Objective-C counterpart. It genera
 - Initalize with `AnyObject`
 - Optional `NSCoding` compliance.
 - Convert object to `NSDictionary`
-	 
+
 ![Preview](https://raw.githubusercontent.com/insanoid/SwiftyJSONAccelerator/master/preview.png)
 
 *Simple configurable interface for generation of file*
