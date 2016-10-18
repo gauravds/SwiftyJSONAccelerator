@@ -135,7 +135,7 @@ public class ModelGenerator {
                 print(key)
                 if let markString = markdownString {
                     print(markString)
-                    declarations = declarations.stringByAppendingFormat("    /// %@\n", markString)
+                    declarations = declarations.stringByAppendingFormat("\n    /// %@\n", markString)
                 }
 
                 let variableName: String = variableNameBuilder(key)

@@ -687,19 +687,19 @@
                                 </connections>
                             </button>
                             <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Gmg-Tp-PPn">
-                                <rect key="frame" x="0.0" y="243" width="717" height="433"/>
+                                <rect key="frame" x="0.0" y="243" width="359" height="433"/>
                                 <clipView key="contentView" id="V7d-R1-cDN">
-                                    <rect key="frame" x="1" y="1" width="715" height="431"/>
+                                    <rect key="frame" x="1" y="1" width="342" height="431"/>
                                     <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                     <subviews>
                                         <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" spellingCorrection="YES" smartInsertDelete="YES" id="fWl-7Q-Cq6" customClass="SJTextView" customModule="SwiftyJSONAccelerator" customModuleProvider="target">
-                                            <rect key="frame" x="0.0" y="0.0" width="715" height="431"/>
+                                            <rect key="frame" x="0.0" y="0.0" width="342" height="431"/>
                                             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                                             <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
-                                            <size key="minSize" width="715" height="431"/>
+                                            <size key="minSize" width="342" height="431"/>
                                             <size key="maxSize" width="717" height="10000000"/>
                                             <color key="insertionPointColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
-                                            <size key="minSize" width="715" height="431"/>
+                                            <size key="minSize" width="342" height="431"/>
                                             <size key="maxSize" width="717" height="10000000"/>
                                         </textView>
                                     </subviews>
@@ -710,7 +710,7 @@
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                                 <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="9fh-RH-upi">
-                                    <rect key="frame" x="700" y="1" width="16" height="431"/>
+                                    <rect key="frame" x="343" y="1" width="15" height="431"/>
                                     <autoresizingMask key="autoresizingMask"/>
                                 </scroller>
                             </scrollView>
@@ -814,6 +814,34 @@
                                     <action selector="recalcEnabledBoxes:" target="XfG-lQ-9wD" id="Vu8-i2-A3h"/>
                                 </connections>
                             </button>
+                            <scrollView horizontalLineScroll="10" horizontalPageScroll="10" verticalLineScroll="10" verticalPageScroll="10" hasHorizontalScroller="NO" usesPredominantAxisScrolling="NO" translatesAutoresizingMaskIntoConstraints="NO" id="MIt-sa-YiA">
+                                <rect key="frame" x="359" y="243" width="358" height="433"/>
+                                <clipView key="contentView" id="ene-4N-1xS">
+                                    <rect key="frame" x="1" y="1" width="341" height="431"/>
+                                    <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                    <subviews>
+                                        <textView importsGraphics="NO" findStyle="panel" continuousSpellChecking="YES" allowsUndo="YES" usesRuler="YES" usesFontPanel="YES" verticallyResizable="YES" allowsNonContiguousLayout="YES" quoteSubstitution="YES" dashSubstitution="YES" smartInsertDelete="YES" id="5aL-q2-z2O" customClass="SJTextView" customModule="SwiftyJSONAccelerator" customModuleProvider="target">
+                                            <rect key="frame" x="0.0" y="0.0" width="341" height="431"/>
+                                            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                                            <color key="backgroundColor" white="0.0" alpha="1" colorSpace="calibratedWhite"/>
+                                            <size key="minSize" width="341" height="431"/>
+                                            <size key="maxSize" width="717" height="10000000"/>
+                                            <color key="insertionPointColor" name="controlLightHighlightColor" catalog="System" colorSpace="catalog"/>
+                                            <size key="minSize" width="341" height="431"/>
+                                            <size key="maxSize" width="717" height="10000000"/>
+                                        </textView>
+                                    </subviews>
+                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
+                                </clipView>
+                                <scroller key="horizontalScroller" hidden="YES" verticalHuggingPriority="750" doubleValue="1" horizontal="YES" id="v3L-Sk-4pH">
+                                    <rect key="frame" x="-100" y="-100" width="87" height="18"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                                <scroller key="verticalScroller" verticalHuggingPriority="750" horizontal="NO" id="bia-uh-xJt">
+                                    <rect key="frame" x="342" y="1" width="15" height="431"/>
+                                    <autoresizingMask key="autoresizingMask"/>
+                                </scroller>
+                            </scrollView>
                         </subviews>
                         <constraints>
                             <constraint firstItem="cd4-4Z-P4h" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="11Y-ht-hKx"/>
@@ -821,12 +849,13 @@
                             <constraint firstItem="aJ1-yn-Pl7" firstAttribute="leading" secondItem="mJg-3P-2Aw" secondAttribute="leading" id="35V-f8-AGH"/>
                             <constraint firstItem="b3c-Wz-v36" firstAttribute="width" secondItem="mJg-3P-2Aw" secondAttribute="width" id="8wA-lO-d5e"/>
                             <constraint firstItem="aJ1-yn-Pl7" firstAttribute="width" secondItem="mJg-3P-2Aw" secondAttribute="width" id="9m4-gy-MnL"/>
-                            <constraint firstAttribute="trailing" secondItem="Gmg-Tp-PPn" secondAttribute="trailing" id="APF-Xg-5Am"/>
                             <constraint firstItem="or1-PD-m0L" firstAttribute="top" secondItem="mJg-3P-2Aw" secondAttribute="bottom" constant="8" id="BEK-W3-IHq"/>
                             <constraint firstItem="sNu-7Z-F06" firstAttribute="leading" secondItem="mJg-3P-2Aw" secondAttribute="leading" id="EKU-pL-FZ6"/>
                             <constraint firstAttribute="trailing" secondItem="Cqf-Zq-qhb" secondAttribute="trailing" constant="103" id="F9K-6T-CLk"/>
                             <constraint firstItem="uZa-9r-6Xo" firstAttribute="top" secondItem="cd4-4Z-P4h" secondAttribute="bottom" constant="6" id="FUN-ZO-xR8"/>
                             <constraint firstItem="sNu-7Z-F06" firstAttribute="width" secondItem="mJg-3P-2Aw" secondAttribute="width" id="FdJ-wz-nzg"/>
+                            <constraint firstItem="GbJ-FJ-Uuc" firstAttribute="top" secondItem="MIt-sa-YiA" secondAttribute="bottom" constant="7" id="GfP-Xp-1Ei"/>
+                            <constraint firstItem="Gmg-Tp-PPn" firstAttribute="width" secondItem="m2S-Jp-Qdl" secondAttribute="width" multiplier="0.5" id="GpD-Ok-QqD"/>
                             <constraint firstItem="cd4-4Z-P4h" firstAttribute="top" secondItem="or1-PD-m0L" secondAttribute="bottom" constant="6" id="HGb-5u-Za0"/>
                             <constraint firstItem="GbJ-FJ-Uuc" firstAttribute="leading" secondItem="PJA-AP-s5I" secondAttribute="trailing" constant="8" id="HqW-6O-Fdl"/>
                             <constraint firstItem="GbJ-FJ-Uuc" firstAttribute="top" secondItem="PJA-AP-s5I" secondAttribute="top" id="IlE-F0-NZD"/>
@@ -838,12 +867,15 @@
                             <constraint firstItem="sNu-7Z-F06" firstAttribute="top" secondItem="b3c-Wz-v36" secondAttribute="bottom" constant="2" id="Svz-9v-6zt"/>
                             <constraint firstItem="PJA-AP-s5I" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="ZKf-XD-X3C"/>
                             <constraint firstItem="uZa-9r-6Xo" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="43" id="ZT5-69-AWH"/>
+                            <constraint firstAttribute="trailing" secondItem="MIt-sa-YiA" secondAttribute="trailing" id="aAB-14-g9x"/>
                             <constraint firstItem="cd4-4Z-P4h" firstAttribute="baseline" secondItem="DfN-HB-jLF" secondAttribute="baseline" id="buI-ih-kIS"/>
                             <constraint firstItem="AwX-MF-DMD" firstAttribute="top" secondItem="Gmg-Tp-PPn" secondAttribute="bottom" constant="7" id="cHK-Sj-6ps"/>
                             <constraint firstItem="or1-PD-m0L" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" constant="15" id="dHR-Z7-0of"/>
                             <constraint firstItem="AwX-MF-DMD" firstAttribute="top" secondItem="PJA-AP-s5I" secondAttribute="top" id="ds3-Tk-TKg"/>
+                            <constraint firstItem="MIt-sa-YiA" firstAttribute="leading" secondItem="Gmg-Tp-PPn" secondAttribute="trailing" id="f44-Pb-ffW"/>
                             <constraint firstItem="aJ1-yn-Pl7" firstAttribute="top" secondItem="PJA-AP-s5I" secondAttribute="bottom" constant="10" id="gHI-A7-SyE"/>
                             <constraint firstItem="mJg-3P-2Aw" firstAttribute="top" secondItem="sNu-7Z-F06" secondAttribute="bottom" constant="2" id="h24-Ox-KU7"/>
+                            <constraint firstItem="MIt-sa-YiA" firstAttribute="top" secondItem="m2S-Jp-Qdl" secondAttribute="top" id="h3Z-Yp-Jez"/>
                             <constraint firstItem="Gmg-Tp-PPn" firstAttribute="leading" secondItem="m2S-Jp-Qdl" secondAttribute="leading" id="hMN-xb-eV1"/>
                             <constraint firstAttribute="trailing" secondItem="mJg-3P-2Aw" secondAttribute="trailing" constant="12" id="hPT-9f-f0o"/>
                             <constraint firstItem="AwX-MF-DMD" firstAttribute="leading" secondItem="GbJ-FJ-Uuc" secondAttribute="trailing" constant="8" id="i7q-la-dYw"/>
@@ -867,6 +899,7 @@
                         <outlet property="supportObjectMapperCheckbox" destination="Cqf-Zq-qhb" id="Bxl-UD-iag"/>
                         <outlet property="supportSwiftyJSONCheckbox" destination="cd4-4Z-P4h" id="JHq-HI-vYJ"/>
                         <outlet property="textView" destination="fWl-7Q-Cq6" id="1lh-CW-y1Y"/>
+                        <outlet property="textViewMD" destination="5aL-q2-z2O" id="JEW-tw-lqb"/>
                     </connections>
                 </viewController>
                 <customObject id="rPt-NT-nkU" userLabel="First Responder" customClass="NSResponder" sceneMemberID="firstResponder"/>
