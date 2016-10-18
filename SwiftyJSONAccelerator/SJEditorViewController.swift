@@ -13,6 +13,7 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
 
     // MARK: Outlet files.
     @IBOutlet var textView: SJTextView!
+    @IBOutlet var textViewMD: SJTextView!
     @IBOutlet var messageLabel: NSTextField!
     @IBOutlet var errorImageView: NSImageView!
     @IBOutlet var baseClassTextField: NSTextField!
@@ -114,6 +115,7 @@ class SJEditorViewController: NSViewController, NSTextViewDelegate {
 
             let generator: ModelGenerator = ModelGenerator.init(baseContent: JSON(object!), baseClassName: baseClassTextField.stringValue, filePath: filePath!)
 
+            generator.markdown = textViewMD?.string
             generator.prefix = prefixClassTextField.stringValue
             generator.authorName = authorNameTextField.stringValue
             generator.companyName = companyNameTextField.stringValue

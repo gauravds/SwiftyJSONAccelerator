@@ -52,6 +52,7 @@ public class ModelGenerator {
     var companyName: String?
     var prefix: String?
     var type: String?
+    var markdown: String?
     var supportSwiftyJSON: Bool?
     var includeSwiftyJSON: Bool?
     var supportObjectMapper: Bool?
@@ -119,6 +120,7 @@ public class ModelGenerator {
         var decoders: String = ""
         var description: String = ""
         var objectMapperMappings: String = ""
+        let markdownParser = RKMarkdownParser(string: markdown)
 
         var objectBaseClass = "NSObject"
 
@@ -128,6 +130,13 @@ public class ModelGenerator {
         if let object = parsedJSONObject.dictionary {
 
             for (key, jsonValue) in object {
+
+                let markdownString : String? = markdownParser.textForKey(key)
+                print(key)
+                if let markString = markdownString {
+                    print(markString)
+                    declarations = declarations.stringByAppendingFormat("    /// %@\n", markString)
+                }
 
                 let variableName: String = variableNameBuilder(key)
                 let stringConstantName: String = "\"\(key)\""//variableNameKeyBuilder(className, variableName: variableName)
